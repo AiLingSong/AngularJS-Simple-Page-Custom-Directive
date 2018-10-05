@@ -1,0 +1,155 @@
+/* Styles go here */
+/** @author: Grace Song */
+
+$primary-color: rgb(236, 201, 136);
+$primary-font-family:  Arial, Helvetica, sans-serif;;
+
+* {
+  font-family: $primary-font-family;
+}
+
+.canvas {
+  background-color: rgb(245, 243, 243);
+  overflow: auto;
+}
+
+.main {
+  margin: 50px 25px 100px;
+  padding: 30px;
+  background-color: white;
+  min-height: 500px;
+}
+
+.header {
+  margin: 5%;
+
+  .glyphicon {
+    color: $primary-color;
+  }
+
+  .glyphicon-remove {
+    color: $primary-color;
+    float: right;
+  }
+
+  .input-group {
+    border: 1px solid $primary-color;
+    border-radius: 30px;
+    padding: 10px;
+
+    .input-group-addon {
+      border: 0px;
+      background-color: white;
+    }
+
+    .form-control {
+      box-shadow:none;
+      -webkit-box-shadow:none; 
+    }
+
+    .form-control:focus {
+      box-shadow:none;
+      -webkit-box-shadow:none; 
+    }
+  }
+
+  .searchbox {
+  border: 1px solid $primary-color;
+  border-radius: 25px;
+  display: inline-block;
+  padding: 15px;
+  }
+
+  .searchInput {
+  border: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+
+  .currentUserBrief{
+    display: inline-block;
+    float: right;
+
+    .currentUserName {
+      padding: 5px; 
+    }  
+
+    .currentUserImg {
+      margin: 5px;
+    }
+
+  }
+}
+
+.sidebar {
+  .sidebar-table {
+    border-color: $primary-color;
+  }
+}
+
+.sidebar .triangle {
+  float: right;
+}
+
+.userDetail {
+  padding: 10px;
+
+  .preference {
+    margin: 50px 10px 50px 10px;
+  }
+  .basicInfo {
+    padding-bottom: 20px;
+
+    .user-image{
+      width: 10em;
+      position: relative;
+      float: left;
+    } 
+
+    .description{
+      margin: 20px;
+      padding: 10px;
+      border-left: 5px solid $primary-color;
+    }       
+  }  
+}
+
+.btn-vlocity {
+  background-color: rgb(95, 83, 69);
+  color: white;
+}
+
+.btn-vlocity:hover {
+  background-color:rgb(155, 146, 146);
+}
+
+.ratingHeart {
+  color: rgb(95, 83, 69);
+  margin: 3px;
+}
+
+table.table-bordered{
+    border:1px solid $primary-color;
+    margin-top:20px;
+  }
+table.table-bordered > thead > tr > th{
+    border:1px solid $primary-color;
+}
+table.table-bordered > tbody > tr > td{
+    border:1px solid $primary-color;
+}
+
+table.table-striped{
+    border:1px solid $primary-color;
+    margin-top:20px;
+  }
+table.table-striped > thead > tr > th{
+    border:1px solid $primary-color;
+}
+table.table-striped > tbody > tr > td{
+    border:1px solid $primary-color;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
+   background-color: rgba(255, 166, 0, 0.151);
+}

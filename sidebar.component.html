@@ -1,0 +1,13 @@
+<!--sidebar template.-->
+<!--@author: Grace Song-->
+<div class="sidebar">
+  <table class="table table-bordered table-hover sidebar-table">
+    <tbody>
+      <tr ng-repeat="user in users | filter: searchKeyword" class="">
+        <td ng-click="selectNew($index)" ng-class="getClass($index)">
+          {{user.name}} <span class="glyphicon glyphicon-triangle-right triangle"></span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

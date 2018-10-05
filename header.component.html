@@ -1,0 +1,22 @@
+<!--header template.-->
+<!--@author: Grace Song-->
+<div class="header row">
+  <div class="col-md-3 col-sm-5 col-xs-12">
+    <div class=" input-group">
+      <span class="input-group-addon" ng-click="search(searchKeyword)">
+        <i class="glyphicon glyphicon-search"></i>
+      </span>
+      <input class="searchInput form-control" type="text" ng-model="searchKeyword" placeholder="search" />
+      <span class=" input-group-addon" ng-click="searchKeyword = ''">
+        <i class="glyphicon glyphicon-remove"></i>
+      </span>  
+    </div> 
+  </div>
+  <div class="currentUserBrief">
+    <span class="currentUserName">
+      {{user.name}}
+    </span>
+    <img class="currentUserImg" src="{{user.img}}" alt="current user" width="36px">
+    <span class="glyphicon glyphicon-triangle-bottom"></span>
+  </div>
+</div>

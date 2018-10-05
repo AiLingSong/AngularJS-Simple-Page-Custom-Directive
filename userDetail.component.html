@@ -1,0 +1,45 @@
+<!--UserDetail panel template. writen in another editer while planker is crashed. the indentation length is defferent from other files.-->
+<!--@author: Grace Song-->
+<div class="userDetail">
+    <div class="basicInfo">
+        <div class="row">
+            <div class="img col-md-3 col-sm-5 col-xs-5">
+                <img class="user-image img-rounded img-reponsive" src="{{user.img}}" alt="{{user.name}}">
+            </div>
+            <div class="col-md-9 col-sm-5 col-xs-5">
+                <div class="row">
+                    <button class="btn btn-vlocity" type="button">Send Message!</button>
+                </div>
+                <div class="row">
+                  <span ng-repeat="element in user.ratingArray track by $index">   
+                     <span ng-if="element" class="glyphicon glyphicon-heart ratingHeart"></span>
+                    <span ng-if="!element" class="glyphicon glyphicon-heart-empty ratingHeart"></span>
+                  </span>
+                </div>
+            </div>           
+        </div>
+        <div class="row description">
+            <p class="">
+                {{user.Description}}
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="preference">
+            <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <td>Likes</td>
+                    <td>Dislikes</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="preference in user.preferences">
+                    <td>{{preference.like}}</td>
+                    <td>{{preference.dislike}}</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>        
+    </div>
+  </div>
